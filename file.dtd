@@ -1,0 +1,19 @@
+<!ELEMENT subjects (subject+)>
+<!ELEMENT subject (subject_id,title,teacher,additionally+)>
+
+<!ELEMENT subject_id (#PCDATA)>
+<!ATTLIST subject_id data_byte CDATA #FIXED "INTEGER">
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT teacher (#PCDATA)>
+
+<!ELEMENT additionally (original,lesson_hours+,pass_cost)>
+
+<!ELEMENT original (#PCDATA)>
+<!ATTLIST original language CDATA #REQUIRED>
+<!ELEMENT pass_cost (#PCDATA)>
+
+<!ELEMENT lesson_hours (lab_hours,lection_hours)>
+
+<!ELEMENT lab_hours (#PCDATA)>
+<!ELEMENT lection_hours (#PCDATA)>
