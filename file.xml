@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding = "utf-8"?>
 <!DOCTYPE subjects SYSTEM "file.dtd">
-<!--<!DOCTYPE subjects[-->
-<!--        <!ELEMENT subjects (subject+)>-->
-<!--        <!ELEMENT subject (subject_id,title, teacher+, additionally+)>-->
-<!--        <!ELEMENT additionally (original,  lesson_hours+,pass_cost)>-->
-<!--        <!ELEMENT lesson_hours (lab_hours,lection_hours)>-->
-
-<!--        <!ELEMENT subject_id (#PCDATA)>-->
-<!--        <!ATTLIST subject_id data_byte CDATA #FIXED "INTEGER">-->
-
-<!--        <!ELEMENT title (#PCDATA)>-->
-<!--        <!ELEMENT teacher (#PCDATA)>-->
-
-<!--        <!ELEMENT original (#PCDATA)>-->
-<!--        <!ATTLIST original language CDATA #REQUIRED>-->
-<!--        <!ELEMENT pass_cost (#PCDATA)>-->
-<!--        <!ELEMENT lab_hours (#PCDATA)>-->
-<!--        <!ELEMENT lection_hours (#PCDATA)>-->
-<!--        ]>-->
-
 
 <subjects>
     <subject>
-        <subject_id data_byte = "INTEGER"> 001 </subject_id>
+        <subject_id> 001 </subject_id>
         <title> Object oriented programming </title>
         <teacher> Skrashuk Vladislav </teacher>
+        <teacher>Olizarovich</teacher>
         <additionally>
-            <original language = "Russian" />
+            <subject_langiage language = "Russian" />
             <lesson_hours>
                 <lab_hours>20</lab_hours>
                 <lection_hours>30</lection_hours>
@@ -36,11 +18,11 @@
     </subject>
 
     <subject>
-        <subject_id data_byte = "INTEGER"> 002 </subject_id>
+        <subject_id> 002 </subject_id>
         <title> Foreign language </title>
         <teacher> Bukova Oksana </teacher>
         <additionally>
-            <original language = "English" />
+            <subject_langiage language = "English" />
             <lesson_hours>
                 <lab_hours>30</lab_hours>
                 <lection_hours>40</lection_hours>
@@ -50,11 +32,11 @@
     </subject>
 
     <subject>
-        <subject_id data_byte = "INTEGER"> 003 </subject_id>
+        <subject_id> 003 </subject_id>
         <title> Computer systems and networks </title>
         <teacher> Olizarovich Evgenii </teacher>
         <additionally>
-            <original language = "Russian" />
+            <subject_langiage language = "Russian" />
             <lesson_hours>
                 <lab_hours>20</lab_hours>
                 <lection_hours>26</lection_hours>
